@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Main.css">
+<head>
+</head>
+<body>
+    <div class="labels">
+        <div class="label-item">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="none" selected>None</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="achievement">High School Achievement:</label>
+            <select id="achievement" name="achievement">
+                <option value="none" selected>None</option>
+                <option value="hhonor">With High Honor</option>
+                <option value="honor">With Honor</option>
+               
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="health-status">Health Status:</label>
+            <select id="health-status" name="health-status">
+                <option value="none" selected>None</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="socioeconomic-status">Socioeconomic Status:</label>
+            <select id="socioeconomic-status" name="socioeconomic-status">
+                <option value="none" selected>None</option>
+                <option value="low">Low</option>
+                <option value="middle">Middle</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="shs-strand">SHS Strand:</label>
+            <select id="shs-strand" name="shs-strand">
+                <option value="none" selected>None</option>
+                <option value="General Academic Strand">General Academic Strand</option>
+                <option value="TVL-ICT">TVL-ICT</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="peer-influence">Peer Influence:</label>
+            <select id="peer-influence" name="peer-influence">
+                <option value="none" selected>None</option>
+                <option value="positive">Positive</option>
+                <option value="neutral">Neutral</option>
+                <option value="negative">Negative</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="none" selected>None</option>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="rural">Rural</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="universities">Universities:</label>
+            <select id="universities" name="universities">
+                <option value="none" selected>None</option>
+                <option value="university-a">University A</option>
+                <option value="university-b">University B</option>
+                <option value="university-c">University C</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="career-aspiration">Career Aspiration:</label>
+            <select id="career-aspiration" name="career-aspiration">
+                <option value="none" selected>None</option>
+                <option value="engineer">Engineer</option>
+                <option value="teacher">Teacher</option>
+                <option value="programmer">Programmer</option>
+                <option value="business">Business</option>
+                <option value="office">Office Stuff</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="academic-term">Academic Term:</label>
+            <select id="academic-term" name="academic-term">
+                <option value="none" selected>None</option>
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+            </select>
+        </div>
+       
+    </div>
+    <div class="modal" id="course-modal">
+        <h2>Course Recommendations</h2>
+        <div id="course-list"></div>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+    <script>
+       function displaySelectedValues() {
+    
+    var genderSelect = document.getElementById("gender");
+    var highSchoolAchievementSelect = document.getElementById("achievement");
+    var healthStatusSelect = document.getElementById("health-status");
+    var socioeconomicStatusSelect = document.getElementById("socioeconomic-status");
+    var shsStrandSelect = document.getElementById("shs-strand");
+    var peerInfluenceSelect = document.getElementById("peer-influence");
+    var locationSelect = document.getElementById("location");
+    var universitiesSelect = document.getElementById("universities");
+    var careerAspirationSelect = document.getElementById("career-aspiration");
+    var academicTermSelect = document.getElementById("academic-term");
+
+    var gender = genderSelect.value;
+    var highSchoolAchievement = highSchoolAchievementSelect.value;
+    var healthStatus = healthStatusSelect.value;
+    var socioeconomicStatus = socioeconomicStatusSelect.value;
+    var shsStrand = shsStrandSelect.value;
+    var peerInfluence = peerInfluenceSelect.value;
+    var location = locationSelect.value;
+    var universities = universitiesSelect.value;
+    var careerAspiration = careerAspirationSelect.value;
+    var academicTerm = academicTermSelect.value;
+    var courseRecommendations = {
+        "BSIT": 0,
+        "BEED": 0,
+        "BSED": 0,
+        "BSBAHRM": 0,
+        "BSOA": 0,
+        "BSBA": 0
+    };
+
+    if (gender === "male" || gender === "female") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (highSchoolAchievement === "hhonor" || highSchoolAchievement === "honor") {
+    for (var course in courseRecommendations) {
+        courseRecommendations[course] += 10;
+    }
+    }
+
+    if (healthStatus === "excellent" || healthStatus === "good" || healthStatus === "fair" || healthStatus === "poor") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (socioeconomicStatus === "low" || socioeconomicStatus === "middle" || socioeconomicStatus === "high") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (shsStrand === "General Academic Strand") {
+        courseRecommendations["BSBA"] += 10; 
+    } else if (shsStrand === "TVL-ICT") 
+    {
+        courseRecommendations["BSIT"] += 10;
+    }
+
+
+    if (peerInfluence === "positive" || peerInfluence === "neutral" || peerInfluence === "negative") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (location === "urban" || location === "suburban" || location === "rural") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (universities === "university-a" || universities === "university-b" || universities === "university-c") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+
+    if (careerAspiration === "office") 
+    {
+        courseRecommendations["BSOA"] += 10; 
+    } else if (careerAspiration === "engineer") 
+    {
+        courseRecommendations["BSIT"] += 10;
+    } else if (careerAspiration === "teacher") 
+    {
+        courseRecommendations["BEED"] += 10;
+    } else if (careerAspiration === "teacher") 
+    {
+        courseRecommendations["BSED"] += 10;
+    } else if (careerAspiration === "programmer") 
+    {
+        courseRecommendations["BSIT"] += 10;
+    } else if (careerAspiration === "business") 
+    {
+        courseRecommendations["BSBA"] += 10;
+    } else if (careerAspiration === "business") 
+    {
+        courseRecommendations["BSBAHRM"] += 10;
+    }
+
+
+    if (academicTerm === "fall" || academicTerm === "spring" || academicTerm === "summer") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] += 10;
+        }
+    }
+  var courseList = document.getElementById("course-list");
+            courseList.innerHTML = "";
+
+            for (var course in courseRecommendations) {
+               
+                var progressBarContainer = document.createElement("div");
+                progressBarContainer.className = "progress-container";
+                var progressBar = document.createElement("div");
+                progressBar.className = "progress-bar";
+                progressBar.style.width = courseRecommendations[course] + "%";
+
+                var percentageElement = document.createElement("div");
+                percentageElement.className = "percentage-label";
+                percentageElement.textContent = courseRecommendations[course].toFixed(2) + "%";
+
+                progressBarContainer.appendChild(progressBar);
+                progressBarContainer.appendChild(percentageElement);
+
+                var courseElement = document.createElement("div");
+                courseElement.className = "course-label";
+                courseElement.textContent = course + ":";
+
+                courseList.appendChild(courseElement);
+                courseList.appendChild(progressBarContainer);
+            }
+
+            var modal = document.getElementById("course-modal");
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+        var modal = document.getElementById("course-modal");
+        modal.style.display = "none";
+
+        var dropdowns = document.querySelectorAll('select');
+        dropdowns.forEach(function(dropdown) {
+            dropdown.value = 'none';
+        });
+    }
+    </script>
+    <button type="submit" class="submit-button" onclick="displaySelectedValues()"> Submit</button>
+</body>
+</html>
