@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Main.css">
+    </head>
+<body>
+    <div class="labels">
+        <div class="label-item">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" data-associated-input="otherGenderInput">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="none" selected>Please select your Gender</option>
+            </select>
+        </div>
+        
+        <div class="designForOther" id="otherGenderInput" style="display: none;">
+            <label for="otherGender">Please specify:</label>
+            <input type="text" id="otherGender" name="otherGender">
+        </div>
+        
+
+        <div class="label-item">
+            <label for="achievement">High School Achievement:</label>
+            <select id="achievement" name="achievement">
+                <option value="whhonor">With Highest Honor</option>
+                <option value="hhonor">With High Honor</option>
+                <option value="honor">With Honor</option>
+                <option value="none" selected>Please select your High School Achievement</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="health-status">Health Status:</label>
+            <select id="health-status" name="health-status">
+                
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+                <option value="critical">Critical</option>
+                <option value="none" selected>Please select your Health Status</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="socioeconomic-status">Socioeconomic Status:</label>
+            <select id="socioeconomic-status" name="socioeconomic-status">
+                
+                <option value="low">Low</option>
+                <option value="middle">Middle</option>
+                <option value="high">High</option>
+                <option value="none" selected>Please select your Socioeconomic Status</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="shs-strand">Senior High School Strand:</label>
+            <select id="shs-strand" name="shs-strand">
+                <option value="ABM">Accountancy And Business Management (ABM)</option>
+                <option value="STEM">Science Technology Engineering and Mathematics (STEM)</option>
+                <option value="HUMMS">Humanities and Social Science (HUMMS)</option>
+                <option value="GAS">General Academic Strand (GAS)</option>
+                <option value="TVL-AF">Technical Vocational Livelihood - Agricultural Fishery (TVL-AF)</option>
+                <option value="TVL-HE">Technical Vocational Livelihood - Home Economics (TVL-HE)</option>
+                <option value="TVL-ICT">Technical Vocational Livelihood - Information and Communication Technology (TVL-ICT)</option>
+                <option value="none" selected>Please select your Strand</option>
+            </select>
+        </div>
+        
+
+        <div class="label-item">
+            <label for="peer-influence">Peer Influence:</label>
+            <select id="peer-influence" name="peer-influence">
+                <option value="positive">Positive</option>
+                <option value="neutral">Neutral</option>
+                <option value="negative">Negative</option>
+                <option value="none" selected>Please your Peer Influence</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="Albay">Albay</option>
+                <option value="Camarines_Sur">Camarines Sur</option>
+                <option value="Camarines_Norte">Camarines Norte</option>
+                <option value="Catanduanes">Catanduanes</option>
+                <option value="Masbate">Masbate</option>
+                <option value="Sorsogon">Sorsogon</option>
+                <option value="none" selected>Please select your Location</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="universities">Universities:</label>
+            <select id="universities" name="universities">
+                <option value="none">Please select your University</option>
+                <optgroup label="Albay">
+                    <option data-location="Albay" value="Bicol University - Main Campus - Legazpi City">Bicol University - Main Campus - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Engineering - Legazpi City">Bicol University - College of Engineering - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Business, Economics, and Management - Legazpi City">Bicol University - College of Business, Economics, and Management - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Education - Legazpi City">Bicol University - College of Education - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Nursing - Legazpi City">Bicol University - College of Nursing - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Science - Legazpi City">Bicol University - College of Science - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - College of Social Sciences and Philosophy - Legazpi City">Bicol University - College of Social Sciences and Philosophy - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol University - Polangui Campus - Polangui">Bicol University - Polangui Campus - Polangui</option>
+                    <option data-location="Albay" value="Bicol University - Tabaco Campus - Tabaco City">Bicol University - Tabaco Campus - Tabaco City</option>
+                    <option data-location="Albay" value="Bicol University - Guinobatan Campus - Guinobatan">Bicol University - Guinobatan Campus - Guinobatan</option>
+                    <option data-location="Albay" value="Divine Word College of Legazpi - Legazpi City">Divine Word College of Legazpi - Legazpi City</option>
+                    <option data-location="Albay" value="Bicol College - Daraga">Bicol College - Daraga</option>
+                    <option data-location="Albay" value="Ligao Community College - Ligao City">Ligao Community College - Ligao City</option>
+                    <option data-location="Albay" value="Mariners' Polytechnic Colleges Foundation - Legazpi City">Mariners' Polytechnic Colleges Foundation - Legazpi City</option>
+                    <option data-location="Albay" value="STI College - Legazpi - Legazpi City">STI College - Legazpi - Legazpi City</option>
+                    <option data-location="Albay" value="Tabaco College - Tabaco City">Tabaco College - Tabaco City</option>
+                    <option data-location="Albay" value="AMA Computer College - Legazpi - Legazpi City">AMA Computer College - Legazpi - Legazpi City</option>
+                    <option data-location="Albay" value="University of Northeastern Philippines (UNEP) - Iriga City, Camarines Sur (serving parts of Albay)">University of Northeastern Philippines (UNEP) - Iriga City, Camarines Sur (serving parts of Albay)</option>
+                </optgroup>
+                
+                <optgroup label="Camarines Sur">
+                    <option data-location="Camarines_Sur" value="Ateneo de Naga University">Ateneo de Naga University</option>
+                    <option data-location="Camarines_Sur" value="University of Nueva Caceres">University of Nueva Caceres</option>
+                    <option data-location="Camarines_Sur" value="Camarines Sur Polytechnic Colleges">Camarines Sur Polytechnic Colleges</option>
+                    <option data-location="Camarines_Sur" value="Polytechnic University of the Philippines - Ragay Branch">Polytechnic University of the Philippines - Ragay Branch</option>
+                    <option data-location="Camarines_Sur" value="Alfelor Sr. Memorial College">Alfelor Sr. Memorial College</option>
+                    <option data-location="Camarines_Sur" value="Central Bicol State University Of Agriculture">Central Bicol State University Of Agriculture</option>
+                </optgroup>
+               
+                <optgroup label="Camarines Norte">
+                    <option data-location="Camarines_Norte" value="Camarines Norte State College - Labo Campus">Camarines Norte State College - Labo Campus</option>
+                    <option data-location="Camarines_Norte" value="AMA Computer College">AMA Computer College</option>
+                    <option data-location="Camarines_Norte" value="Bicol Merchant Marine College">Bicol Merchant Marine College</option>
+                    <option data-location="Camarines_Norte" value="Camarines Norte College">Camarines Norte College</option>
+                    <option data-location="Camarines_Norte" value="Golden West Colleges">Golden West Colleges</option>
+                </optgroup>
+               
+                <optgroup label="Catanduanes">
+                    <option data-location="Catanduanes" value="Catanduanes State University (CSU)">Catanduanes State University (CSU)</option>
+                    <option data-location="Catanduanes" value="Catanduanes Colleges">Catanduanes Colleges</option>
+                    <option data-location="Catanduanes" value="Bato Institute of Science and Technology (BIST)">Bato Institute of Science and Technology (BIST)</option>
+                    <option data-location="Catanduanes" value="West Catanduanes College">West Catanduanes College</option>
+                </optgroup>
+                
+                <optgroup label="Masbate">
+                    <option data-location="Masbate" value="Bicol University College of Fisheries and Aquatic Sciences">Bicol University College of Fisheries and Aquatic Sciences</option>
+                    <option data-location="Masbate" value="Northwestern University Masbate">Northwestern University Masbate</option>
+                </optgroup>
+                
+                <optgroup label="Sorsogon">
+                    <option data-location="Sorsogon" value="Bicol University College of Agriculture and Forestry">Bicol University College of Agriculture and Forestry</option>
+                    <option data-location="Sorsogon" value="Bicol University College of Education">Bicol University College of Education</option>
+                    <option data-location="Sorsogon" value="Bicol University Sorsogon Campus">Bicol University Sorsogon Campus</option>
+                    <option data-location="Sorsogon" value="Divine Word College of Legazpi - Sorsogon Campus">Divine Word College of Legazpi - Sorsogon Campus</option>
+                    <option data-location="Sorsogon" value="Sorsogon State College">Sorsogon State College</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="career-aspiration">Career Aspiration:</label>
+            <select id="career-aspiration" name="career-aspiration" data-associated-input="otherCareerInput"> 
+                <option value="engineering">Engineering</option>
+                <option value="education">Education</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="arts">Arts</option>
+                <option value="medicine">Medicine</option>
+                <option value="others">Others</option>
+                <option value="none" selected>Select your Career Aspiration</option>
+            </select>
+        </div>
+
+        <div class="designForOther" id="otherCareerInput" style="display: none;">
+            <label for="otherCareer">Please specify:</label>
+            <input type="text" id="career-input" name="career-input" class="input-field">
+        </div>
+
+        <div class="label-item">
+            <label for="academic-term">Academic Term:</label>
+            <select id="academic-term" name="academic-term">
+                
+                <option value="2years">2 years</option>
+                <option value="3years">3 years</option>
+                <option value="4years">4 years</option>
+                <option value="5years">5 years</option>
+                <option value="none" selected>Select your Academic Term</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="learning-style-preference">Learning Style Preference:</label>
+            <select id="learning-style-preference" name="learning-style-preference">
+                <option value="visual">Visual</option>
+                <option value="auditory">Auditory</option>
+                <option value="reading-writing">Reading/Writing</option>
+                <option value="kinesthetic">Kinesthetic</option>
+                <option value="none" selected>Select your Learning Style Preference</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="skills-hobbies">Skills/Hobbies:</label>
+            <select id="skills-hobbies" name="skills-hobbies" data-associated-input="otherSkillsInput">
+                <option value="technical-skills">Technical skills (e.g., Programming, Design)</option>
+                <option value="creative-skills">Creative skills (e.g., Painting, Writing)</option>
+                <option value="sports">Sports or Physical activities</option>
+                <option value="musical-talents">Musical talents</option>\
+                <option value="communication-skills">Communication Skills</option>
+                <option value="leadership-abilities">Leadership Abilities</option>
+                <option value="others">Others</option>
+                <option value="none" selected>Select your Skills/Hobbies</option>
+            </select>
+        </div>
+
+        <div class="designForOther" id="otherSkillsInput" style="display: none;">
+            <label for="otherSkills">Please specify:</label>
+            <input type="text" id="otherSkills" name="otherSkills">
+        </div>
+
+        <div class="label-item">
+            <label for="financial-aid-or-scholarship">Financial Aid or Scholarship:</label>
+            <select id="financial-aid-or-scholarship" name="financial-aid-or-scholarship"> 
+                <option value="full">Full Scholarship</option>
+                <option value="partial">Partial Scholarship</option>
+                <option value="need">Need - based Financial Aid</option>
+                <option value="merit">Merit - based Financial Aid</option>
+                <option value="none" selected>Select your Financial Aid or Scholarship</option>
+            </select>
+        </div>
+
+        <div class="label-item">
+            <label for="industry-relevance">Industry Relevance:</label>
+            <select id="industry-relevance" name="industry-relevance">
+                <option value="high">High demand and growth</option>
+                <option value="stable">Stable but competitive</option>
+                <option value="niche">Niche or specialized</option>
+                <option value="none" selected>Select your Industry Relavance</option>
+            </select>
+        </div>
+
+        <script>
+            const genderSelect = document.getElementById("gender");
+            const otherGenderInput = document.getElementById("otherGenderInput");
+            const otherGenderField = document.getElementById("otherGender");
+        
+            genderSelect.addEventListener("change", function() {
+                if (genderSelect.value === "other") {
+                    otherGenderInput.style.display = "block";
+                    otherGenderField.setAttribute("required", "required");
+                } else {
+                    otherGenderInput.style.display = "none";
+                    otherGenderField.removeAttribute("required");
+                }
+            });
+
+            const careerSelect = document.getElementById("career-aspiration");
+            const otherCareerInput = document.getElementById("otherCareerInput");
+            const otherCareerField = document.getElementById("otherCareer");
+
+            careerSelect.addEventListener("change", function() {
+                if (careerSelect.value === "others") {
+                     otherCareerInput.style.display = "block";
+                    otherCareerField.setAttribute("required", "required");
+                } else {
+                    otherCareerInput.style.display = "none";
+                    otherCareerField.removeAttribute("required");
+                }
+            });
+
+            const skillsSelect = document.getElementById("skills-hobbies");
+            const otherSkillsInput = document.getElementById("otherSkillsInput");
+            const otherSkillsField = document.getElementById("otherSkills");
+
+            skillsSelect.addEventListener("change", function() {
+                if (skillsSelect.value === "others") {
+                    otherSkillsInput.style.display = "block";
+                    otherSkillsField.setAttribute("required", "required");
+                } else {
+                    otherSkillsInput.style.display = "none";
+                    otherSkillsField.removeAttribute("required");
+                }
+            });
+        </script>
+    
+       <script>
+         const dropdownIds = ["gender", "achievement", "health-status", "socioeconomic-status", "shs-strand", "peer-influence", "location", "universities", "career-aspiration", "academic-term", "learning-style-preference", "skills-hobbies", "financial-aid-or-scholarship", "industry-relevance"];
+
+    dropdownIds.forEach((dropdownId) => {
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.addEventListener("click", hideOption);
+    });
+
+    function hideOption(event) {
+            const dropdown = event.target;
+            const placeholderOption = dropdown.querySelector('option[value="none"]');
+            placeholderOption.style.display = "none";
+            dropdown.removeEventListener("click", hideOption);
+        }
+
+        var locationDropdown = document.getElementById('location');
+        var universitiesDropdown = document.getElementById('universities');
+        locationDropdown.addEventListener('change', function () {
+            var selectedLocation = locationDropdown.value;
+
+            var options = universitiesDropdown.getElementsByTagName('option');
+            for (var i = 0; i < options.length; i++) {
+                options[i].style.display = 'none';
+            }
+
+            var optionsToShow = universitiesDropdown.querySelectorAll('option[data-location="' + selectedLocation + '"]');
+            for (var i = 0; i < optionsToShow.length; i++) {
+                optionsToShow[i].style.display = 'block';
+            }
+        });
+        
+
+    </script>
+    
+    </div>
+    <div class="modal" id="course-modal">
+        <h2>Course Recommendations</h2>
+        <div class="location-display" id="location-display"></div>
+        <div class="course-list" id="course-list"></div>
+        <button class="close-button" onclick="closeModal()">Close</button>
+    </div>
+ 
+    <script>
+function displaySelectedValues() {
+
+    var genderSelect = document.getElementById("gender");
+    var highSchoolAchievementSelect = document.getElementById("achievement");
+    var healthStatusSelect = document.getElementById("health-status");
+    var socioeconomicStatusSelect = document.getElementById("socioeconomic-status");
+    var shsStrandSelect = document.getElementById("shs-strand");
+    var peerInfluenceSelect = document.getElementById("peer-influence");
+    var locationSelect = document.getElementById("location");
+    var universitiesSelect = document.getElementById("universities");
+    var careerAspirationSelect = document.getElementById("career-aspiration");
+    var academicTermSelect = document.getElementById("academic-term");
+    var learningStylePreferenceSelect = document.getElementById("learning-style-preference");
+    var skillsHobiesSelect = document.getElementById("skills-hobbies");
+    var financialAidOrScholarshipSelect = document.getElementById("financial-aid-or-scholarship");
+    var industryRelevanceSelect = document.getElementById("industry-relevance");
+
+    var gender = genderSelect.value;
+    var highSchoolAchievement = highSchoolAchievementSelect.value;
+    var healthStatus = healthStatusSelect.value;
+    var socioeconomicStatus = socioeconomicStatusSelect.value;
+    var shsStrand = shsStrandSelect.value;
+    var peerInfluence = peerInfluenceSelect.value;
+    var location = locationSelect.value;
+    var universities = universitiesSelect.value;
+    var careerAspiration = careerAspirationSelect.value;
+    var academicTerm = academicTermSelect.value;
+    var learningStylePreference = learningStylePreferenceSelect.value;
+    var skillsHobies = skillsHobiesSelect.value;
+    var financialAidOrScholarship = financialAidOrScholarshipSelect.value;
+    var industryRelevance = industryRelevanceSelect.value;
+   var courseRecommendations = {
+    "BAH - Bachelor of Arts in History": 0,
+    "BAP - Bachelor of Arts in Philosophy": 0,
+    "BFA (ID) - Bachelor of Fine Arts Major in Industrial Design": 0,
+    "BFA (Painting) - Bachelor of Fine Arts Major in Painting": 0,
+    "BFA (Sculpture) - Bachelor of Fine Arts Major in Sculpture": 0,
+    "BFA (Visual Comm) - Bachelor of Fine Arts Major in Visual Communication": 0,
+    "BAE - Bachelor of Arts in Economics": 0,
+    "BSE - Bachelor of Science in Economics": 0,
+    "BAPsych - Bachelor of Arts in Psychology": 0,
+    "BSPsych - Bachelor of Science in Psychology": 0,
+    "BSCrim - Bachelor of Science in Criminology": 0,
+    "BSPolSci - Bachelor of Science in Political Science": 0,
+    "BAEng - Bachelor of Arts in English": 0,
+    "BALing - Bachelor of Arts in Linguistics": 0,
+    "BALit - Bachelor of Arts in Literature": 0,
+    "BSForensic - Bachelor of Science in Forensic Science": 0,
+    "BAIS - Bachelor of Arts in Islamic Studies": 0,
+    "BSEnvSci - Bachelor of Science in Environmental Science": 0,
+    "BSForestry - Bachelor of Science in Forestry": 0,
+    "BSFisheries - Bachelor of Science in Fisheries": 0,
+    "BSGeology - Bachelor of Science in Geology": 0,
+    "BSBio - Bachelor of Science in Biology": 0,
+    "BSMBio - Bachelor of Science in Molecular Biology": 0,
+    "BSP - Bachelor of Science in Physics": 0,
+    "BSChem - Bachelor of Science in Chemistry": 0,
+    "BSCS - Bachelor of Science in Computer Science": 0,
+    "BSIT - Bachelor of Science in Information Technology": 0,
+    "BSIS - Bachelor of Science in Information Systems": 0,
+    "BSMath - Bachelor of Science in Mathematics": 0,
+    "BSAMath - Bachelor of Science in Applied Mathematics": 0,
+    "BSStat - Bachelor of Science in Statistics": 0,
+    "BSAgri - Bachelor of Science in Agriculture": 0,
+    "BSAgribus - Bachelor of Science in Agribusiness": 0,
+    "BSAgro - Bachelor of Science in Agroforestry": 0,
+    "BSArch - Bachelor of Science in Architecture": 0,
+    "BSID - Bachelor of Science in Interior Design": 0,
+    "BLA - Bachelor in Landscape Architecture": 0,
+    "BSA - Bachelor of Science in Accountancy": 0,
+    "BSHRM - Bachelor of Science in Human Resource Management": 0,
+    "BSAT - Bachelor of Science in Accounting Technology": 0,
+    "BSBA - Bachelor of Science in Business Administration": 0,
+    "BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics": 0,
+    "BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management": 0,
+    "BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development": 0,
+    "BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management": 0,
+    "BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management": 0,
+    "BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management": 0,
+    "BSEntrep - Bachelor of Science in Entrepreneurship": 0,
+    "BSOA - Bachelor of Science in Office Administration": 0,
+    "BSREM - Bachelor of Science in Real Estate Management": 0,
+    "BSTM - Bachelor of Science in Tourism Management": 0,
+    "BSMT - Bachelor of Science in Medical Technology": 0,
+    "BSMid - Bachelor of Science in Midwifery": 0,
+    "BSN - Bachelor of Science in Nursing": 0,
+    "BSOT - Bachelor of Science in Occupational Therapy": 0,
+    "BSP - Bachelor of Science in Pharmacy": 0,
+    "BSPT - Bachelor of Science in Physical Therapy": 0,
+    "BSRadTech - Bachelor of Science in Radiologic Technology": 0,
+    "BSRT - Bachelor of Science in Respiratory Therapy": 0,
+    "BSSLP - Bachelor of Science in Speech Language Pathology": 0,
+    "BSSS - Bachelor of Science in Sports Science": 0,
+    "BSEd - Bachelor of Science in Secondary Education": 0,
+    "BEEd - Bachelor of Elementary Education": 0,
+    "BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education": 0,
+    "BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences": 0,
+    "BSEd (English) - Bachelor of Science in Secondary Education Major in English": 0,
+    "BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino": 0,
+    "BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics": 0,
+    "BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies": 0,
+    "BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education": 0,
+    "BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences": 0,
+    "BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies": 0,
+    "BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education": 0,
+    "BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education": 0,
+    "BLIS - Bachelor of Library and Information Science in the Philippines": 0,
+    "BPE - Bachelor of Physical Education": 0,
+    "BSAeroE - Bachelor of Science in Aeronautical Engineering": 0,
+    "BSCerE - Bachelor of Science in Ceramic Engineering": 0,
+    "BSChE - Bachelor of Science in Chemical Engineering": 0,
+    "BSCE - Bachelor of Science in Civil Engineering": 0,
+    "BSCoE - Bachelor of Science in Computer Engineering": 0,
+    "BSECE - Bachelor of Science in Electrical Engineering": 0,
+    "BSECE - Bachelor of Science in Electronics and Communication Engineering": 0,
+    "BSGE - Bachelor of Science in Geodetic Engineering": 0,
+    "BSGeoE - Bachelor of Science in Geological Engineering": 0,
+    "BSIE - Bachelor of Science in Industrial Engineering": 0,
+    "BSMA - Bachelor of Science in Management Accounting (BSMA)": 0,
+    "BSMarE - Bachelor of Science in Marine Engineering": 0,
+    "BSMatE - Bachelor of Science in Materials Engineering": 0,
+    "BSME - Bachelor of Science in Mechanical Engineering": 0,
+    "BSMetE - Bachelor of Science in Metallurgical Engineering": 0,
+    "BSMinE - Bachelor of Science in Mining Engineering": 0,
+    "BSPetE - Bachelor of Science in Petroleum Engineering": 0,
+    "BSSanE - Bachelor of Science in Sanitary Engineering": 0,
+    "BABroadcast - Bachelor of Arts in Broadcasting": 0,
+    "BAComm - Bachelor of Arts in Communication": 0,
+    "BADevComm - Bachelor of Arts in Development Communication": 0,
+    "BAMassComm - Bachelor of Arts in Mass Communication": 0,
+    "BAJourn - Bachelor of Arts in Journalism": 0,
+    "BSCD - Bachelor of Science in Community Development": 0,
+    "BSCustoms - Bachelor of Science in Customs Administration": 0,
+    "BSFS - Bachelor of Science in Foreign Service": 0,
+    "BSIS - Bachelor of Science in International Studies": 0,
+    "BSPublicSafety - Bachelor of Science in Public Safety": 0,
+    "BSSW - Bachelor of Science in Social Work": 0,
+    "BPA - Bachelor of Public Administration": 0,
+    "BSMT - Bachelor of Science in Marine Transportation": 0,
+    "BSFoodTech - Bachelor of Science in Food Technology": 0,
+    "BSNutriDiet - Bachelor of Science in Nutrition and Dietetics": 0
+};
+
+if (gender === "male" || gender === "female") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (highSchoolAchievement === "whhonor" || highSchoolAchievement === "hhonor" || highSchoolAchievement === "honor") {
+    for (var course in courseRecommendations) {
+        courseRecommendations[course] +=3.8;
+    }
+    }
+
+    if (healthStatus === "excellent" || healthStatus === "good" || healthStatus === "fair" || healthStatus === "poor" || healthStatus === "critical") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (socioeconomicStatus === "low" || socioeconomicStatus === "middle" || socioeconomicStatus === "high") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (shsStrand === "GAS") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=7.9;
+        } 
+    } else if (shsStrand === "ABM") {
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=7.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=7.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=7.9;
+    courseRecommendations["BSMA - Bachelor of Science in Management Accounting (BSMA)"] +=7.9;
+    courseRecommendations["BSE - Bachelor of Science in Economics"] +=7.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=7.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=7.9;
+    courseRecommendations["BSHRM - Bachelor of Science in Human Resource Management"] +=7.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=7.9;
+    courseRecommendations["BSIS - Bachelor of Science in Information Systems"] +=7.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=7.9;
+    courseRecommendations["BPA - Bachelor of Public Administration"] +=7.9;
+    courseRecommendations["BSCustoms - Bachelor of Science in Customs Administration"] +=7.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=7.9;
+} else if (shsStrand === "STEM") {
+    courseRecommendations["BSAeroE - Bachelor of Science in Aeronautical Engineering"] +=7.9;
+    courseRecommendations["BSCerE - Bachelor of Science in Ceramic Engineering"] +=7.9;
+    courseRecommendations["BSChE - Bachelor of Science in Chemical Engineering"] +=7.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=7.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=7.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=7.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=7.9;
+    courseRecommendations["BSGE - Bachelor of Science in Geodetic Engineering"] +=7.9;
+    courseRecommendations["BSGeoE - Bachelor of Science in Geological Engineering"] +=7.9;
+    courseRecommendations["BSIE - Bachelor of Science in Industrial Engineering"] +=7.9;
+    courseRecommendations["BSMA - Bachelor of Science in Management Accounting (BSMA)"] +=7.9;
+    courseRecommendations["BSMarE - Bachelor of Science in Marine Engineering"] +=7.9;
+    courseRecommendations["BSMatE - Bachelor of Science in Materials Engineering"] +=7.9;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=7.9;
+    courseRecommendations["BSMetE - Bachelor of Science in Metallurgical Engineering"] +=7.9;
+    courseRecommendations["BSMinE - Bachelor of Science in Mining Engineering"] +=7.9;
+    courseRecommendations["BSPetE - Bachelor of Science in Petroleum Engineering"] +=7.9;
+    courseRecommendations["BSSanE - Bachelor of Science in Sanitary Engineering"] +=7.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=7.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=7.9;
+    courseRecommendations["BSP - Bachelor of Science in Physics"] +=7.9;
+    courseRecommendations["BSChem - Bachelor of Science in Chemistry"] +=7.9;
+    courseRecommendations["BSEnvSci - Bachelor of Science in Environmental Science"] +=7.9;
+} else if (shsStrand === "HUMMS") {
+    courseRecommendations["BAPsych - Bachelor of Arts in Psychology"] +=7.9;
+    courseRecommendations["BSPsych - Bachelor of Science in Psychology"] +=7.9;
+    courseRecommendations["BAP - Bachelor of Arts in Philosophy"] +=7.9;
+    courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=7.9;
+    courseRecommendations["BAH - Bachelor of Arts in History"] +=7.9;
+    courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=7.9;
+    courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=7.9;
+} else if (shsStrand === "TVL-AF") {
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=7.9;
+    courseRecommendations["BSEnvSci - Bachelor of Science in Environmental Science"] +=7.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=7.9;
+    courseRecommendations["BSForestry - Bachelor of Science in Forestry"] +=7.9;
+} else if (shsStrand === "TVL-HE") {
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=7.9;
+    courseRecommendations["BSNutriDiet - Bachelor of Science in Nutrition and Dietetics"] +=7.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=7.9;
+    courseRecommendations["BSID - Bachelor of Science in Interior Design"] +=7.9;
+} else if (shsStrand === "TVL-ICT") {
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=7.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=7.9;
+    courseRecommendations["BSIS - Bachelor of Science in Information Systems"] +=7.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=7.9;
+}
+    
+    if (peerInfluence === "positive" || peerInfluence === "neutral" || peerInfluence === "negative") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (location === "Albay") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=3.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=3.6;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=3.5;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=3.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=3.4;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=4;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=3.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=3.5;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=3.1;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=3.8;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=3.8;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=3.8;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=3.7;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=3.8;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=3.8;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=3.8;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=3.8;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=3.8;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=3.8;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=3.8;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=3.8;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=3.8;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=3.8;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=3.8;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=3.3;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=3.8;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BAPsych - Bachelor of Arts in Psychology"] +=3.8;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=3.9;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=3.8;
+    courseRecommendations["BFA (ID) - Bachelor of Fine Arts Major in Industrial Design"] +=3.8;
+    courseRecommendations["BFA (Painting) - Bachelor of Fine Arts Major in Painting"] +=3.8;
+    courseRecommendations["BFA (Sculpture) - Bachelor of Fine Arts Major in Sculpture"] +=3.8;
+    courseRecommendations["BFA (Visual Comm) - Bachelor of Fine Arts Major in Visual Communication"] +=3.9;
+    courseRecommendations["BAComm - Bachelor of Arts in Communication"] +=3.8;
+    
+   } else if (location === "Camarines_Sur") {
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=3.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=3.6;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=3.5;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=3.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=3.4;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=4;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=3.9;
+    courseRecommendations["BPE - Bachelor of Physical Education"] +=3.8;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=3.5;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=3.1;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=3.8;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=3.8;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=3.8;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=3.7;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=3.8;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=3.8;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=3.8;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=3.8;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=3.8;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=3.8;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=3.8;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=3.8;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=3.3;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=3.8;
+    courseRecommendations["BAPsych - Bachelor of Arts in Psychology"] +=3.8;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=3.8;
+    courseRecommendations["BAComm - Bachelor of Arts in Communication"] +=3.8;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=3.8;
+   
+   } else if (location === "Camarines_Norte") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=3.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=3.6;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=3.5;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=3.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=3.4;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=4;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=3.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=3.8;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=3.8;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=3.8;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=3.8;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=3.8;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=3.8;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=3.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=3.1;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=3.8;
+    
+   } else if (location === "Catanduanes") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=3.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=3.8;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=3.1;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=3.8;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=3.8;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=3.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=3.5;
+    
+   } else if (location === "Masbate") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=3.5;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=3.1;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=3.8;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=3.3;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=3.8;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=3.9;
+
+   } else if (location === "Sorsogon") {
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=3.8;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=3.8;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=3.5;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=3.3;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=3.8;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=3.8;
+    courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=3.8;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=3.8;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=3.8;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=3.8;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=3.8;
+    courseRecommendations["BSArch - Bachelor of Science in Architecture"] +=3.8;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=3.8;
+    courseRecommendations["BSAT - Bachelor of Science in Accounting Technology"] +=3.8;
+    courseRecommendations["BSMT - Bachelor of Science in Medical Technology"] +=3.8;
+    courseRecommendations["BSRadTech - Bachelor of Science in Radiologic Technology"] +=3.8;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=3.8;
+    courseRecommendations["BPA - Bachelor of Public Administration"] +=3.8;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=3.8;
+
+   }
+
+   if (universities === "Bicol University - Main Campus - Legazpi City") {
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+
+} else if (universities === "Bicol University - College of Engineering - Legazpi City") {
+    courseRecommendations["BSChE - Bachelor of Science in Chemical Engineering"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=35.9;
+    courseRecommendations["BSGE - Bachelor of Science in Geodetic Engineering"] +=35.9;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=35.9;
+    courseRecommendations["BSMinE - Bachelor of Science in Mining Engineering"] +=35.9;
+
+} else if (universities === "Bicol University - College of Business, Economics, and Management - Legazpi City") {
+    courseRecommendations["BSE - Bachelor of Science in Economics"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+
+} else if (universities === "Bicol University - College of Nursing - Legazpi City") {
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+
+} else if (universities === "Bicol University - College of Science - Legazpi City") {
+    courseRecommendations["BSBio - Bachelor of Science in Biology"] +=35.9;
+    courseRecommendations["BSChem - Bachelor of Science in Chemistry"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+
+} else if (universities === "Bicol University - College of Social Sciences and Philosophy - Legazpi City") {
+    courseRecommendations["BAP - Bachelor of Arts in Philosophy"] +=35.9;
+
+} else if (universities === "Bicol University - Polangui Campus - Polangui") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSIS - Bachelor of Science in Information Systems"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+
+} else if (universities === "Bicol University - Tabaco Campus - Tabaco City") {
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=35.9;
+
+} else if (universities === "Bicol University - Guinobatan Campus - Guinobatan") {
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=35.9;
+
+} else if (universities === "Bicol College - Daraga") {
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=35.9;
+    courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=35.9;
+    courseRecommendations["BAP - Bachelor of Arts in Philosophy"] +=35.9;
+    
+} else if (universities === "Ligao Community College - Ligao City") {
+    courseRecommendations["BAE - Bachelor of Arts in Economics"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=35.9;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+
+} else if (universities === "Mariners' Polytechnic Colleges Foundation - Legazpi City") {
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+
+} else if (universities === "STI College - Legazpi - Legazpi City") {
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+
+} else if (universities === "Tabaco College - Tabaco City") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=35.9;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSMT - Bachelor of Science in Medical Technology"] +=35.9;
+    courseRecommendations["BSP - Bachelor of Science in Pharmacy"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSArch - Bachelor of Science in Architecture"] +=35.9;
+    courseRecommendations["BLA - Bachelor in Landscape Architecture"] +=35.9;
+
+} else if (universities === "AMA Computer College - Legazpi - Legazpi City") {
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BAEng - Bachelor of Arts in English"] +=35.9;
+    courseRecommendations["BAPsych - Bachelor of Arts in Psychology"] +=35.9;
+    courseRecommendations["BAE - Bachelor of Arts in Economics"] +=35.9;
+    courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=35.9;
+    courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=35.9;
+
+} else if (universities === "University of Northeastern Philippines (UNEP) - Iriga City, Camarines Sur (serving parts of Albay)") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=35.9;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSMT - Bachelor of Science in Medical Technology"] +=35.9;
+    courseRecommendations["BSP - Bachelor of Science in Pharmacy"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSArch - Bachelor of Science in Architecture"] +=35.9;
+    courseRecommendations["BLA - Bachelor in Landscape Architecture"] +=35.9;
+
+} else if (universities === "Ateneo de Naga University") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=35.9;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+  
+} else if (universities === "University of Nueva Caceres") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=35.9;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+
+} else if (universities === "Camarines Sur Polytechnic Colleges") {
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSTM - Bachelor of Science in Tourism Management"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=35.9;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=35.9;
+   
+} else if (universities === "Polytechnic University of the Philippines - Ragay Branch") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=35.9;
+
+} else if (universities === "Alfelor Sr. Memorial College") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+
+} else if (universities === "Central Bicol State University Of Agriculture") {
+    courseRecommendations["BSAgro - Bachelor of Science in Agroforestry"] +=35.9;
+    courseRecommendations["BSEnvSci - Bachelor of Science in Environmental Science"] +=35.9;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=35.9;
+    courseRecommendations["BSBio - Bachelor of Science in Biology"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSAgribus - Bachelor of Science in Agribusiness"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+
+} else if (universities === "Camarines Norte State College - Labo Campus") {
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=35.9;
+} else if (universities === "AMA Computer College") {
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BAEng - Bachelor of Arts in English"] +=35.9;
+    courseRecommendations["BAPsych - Bachelor of Arts in Psychology"] +=35.9;
+    courseRecommendations["BAE - Bachelor of Arts in Economics"] +=35.9;
+    courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=35.9;
+    courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=35.9;
+
+} else if (universities === "Bicol Merchant Marine College") {
+    courseRecommendations["BSTM - Bachelor of Science in Tourism Management"] +=35.9;
+    
+} else if (universities === "Camarines Norte College") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=35.9;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=35.9;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+
+} else if (universities === "Golden West Colleges") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+
+} else if (universities === "Catanduanes State University (CSU)") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=35.9;
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=35.9;
+    courseRecommendations["BSAgro - Bachelor of Science in Agroforestry"] +=35.9;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=35.9;
+    courseRecommendations["BSBio - Bachelor of Science in Biology"] +=35.9;
+    courseRecommendations["BSMath - Bachelor of Science in Mathematics"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=35.9;
+    courseRecommendations["BSIS - Bachelor of Science in Information Systems"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+
+} else if (universities === "Catanduanes Colleges") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=35.9;
+
+} else if (universities === "Bato Institute of Science and Technology (BIST)") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+
+} else if (universities === "West Catanduanes College") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=35.9;
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSOA - Bachelor of Science in Office Administration"] +=35.9;
+
+} else if (universities === "Bicol University College of Fisheries and Aquatic Sciences") {
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+    courseRecommendations["BSFisheries - Bachelor of Science in Fisheries"] +=35.9;
+
+} else if (universities === "Northwestern University Masbate") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSA - Bachelor of Science in Accountancy"] +=35.9;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=35.9;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=35.9;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=35.9;
+    courseRecommendations["BSMT - Bachelor of Science in Medical Technology"] +=35.9;
+    courseRecommendations["BSMid - Bachelor of Science in Midwifery"] +=35.9;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=35.9;
+    courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=35.9;
+    courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=35.9;
+
+} else if (universities === "Bicol University College of Agriculture and Forestry") {
+    courseRecommendations["BSAgri - Bachelor of Science in Agriculture"] +=35.9;
+    courseRecommendations["BSForestry - Bachelor of Science in Forestry"] +=35.9;
+    courseRecommendations["BSAgribus - Bachelor of Science in Agribusiness"] +=35.9;
+
+} else if (universities === "Bicol University - College of Education - Legazpi City") {
+    courseRecommendations["BPE - Bachelor of Physical Education"] +=35.9;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=35.9;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=35.9;
+
+} else if (universities === "Bicol University Sorsogon Campus") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+
+} else if (universities === "Divine Word College of Legazpi - Legazpi City") {
+    courseRecommendations["BAEng - Bachelor of Arts in English"] +=35.9;
+    courseRecommendations["BLIS - Bachelor of Library and Information Science"] +=35.9;
+    courseRecommendations["BSBio - Bachelor of Science in Biology"] +=35.9;
+    courseRecommendations["BSMath - Bachelor of Science in Mathematics"] +=35.9;
+
+} else if (universities === "Sorsogon State College") {
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=35.9;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=35.9;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=35.9;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=35.9;
+    courseRecommendations["BSMid - Bachelor of Science in Midwifery"] +=35.9;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=35.9;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=35.9;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=35.9;
+    courseRecommendations["BSArch - Bachelor of Science in Architecture"] +=35.9;
+    courseRecommendations["BSTM - Bachelor of Science in Tourism Management"] +=35.9;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=35.9;
+    courseRecommendations["BSFoodTech - Bachelor of Science in Food Technology"] +=35.9;
+  
+}
+
+if (careerAspiration === "engineering") {
+    courseRecommendations["BSAeroE - Bachelor of Science in Aeronautical Engineering"] +=7.1;
+    courseRecommendations["BSCerE - Bachelor of Science in Ceramic Engineering"] +=7.1;
+    courseRecommendations["BSChE - Bachelor of Science in Chemical Engineering"] +=7.1;
+    courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=7.1;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=7.1;
+    courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=7.1;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=7.1;
+    courseRecommendations["BSGE - Bachelor of Science in Geodetic Engineering"] +=7.1;
+    courseRecommendations["BSGeoE - Bachelor of Science in Geological Engineering"] +=7.1;
+    courseRecommendations["BSIE - Bachelor of Science in Industrial Engineering"] +=7.1;
+    courseRecommendations["BSMA - Bachelor of Science in Management Accounting (BSMA)"] +=7.1;
+    courseRecommendations["BSMarE - Bachelor of Science in Marine Engineering"] +=7.1;
+    courseRecommendations["BSMatE - Bachelor of Science in Materials Engineering"] +=7.1;
+    courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=7.1;
+    courseRecommendations["BSMetE - Bachelor of Science in Metallurgical Engineering"] +=7.1;
+    courseRecommendations["BSMinE - Bachelor of Science in Mining Engineering"] +=7.1;
+    courseRecommendations["BSPetE - Bachelor of Science in Petroleum Engineering"] +=7.1;
+    courseRecommendations["BSSanE - Bachelor of Science in Sanitary Engineering"] +=7.1;
+} else if (careerAspiration === "education") {
+    courseRecommendations["BPE - Bachelor of Physical Education"] +=7.1;
+    courseRecommendations["BEEd - Bachelor of Elementary Education"] +=7.1;
+    courseRecommendations["BEEd (Preschool) - Bachelor of Elementary Education Major in Preschool Education"] +=7.1;
+    courseRecommendations["BSEd - Bachelor of Science in Secondary Education"] +=7.1;
+    courseRecommendations["BSEd (TLE) - Bachelor of Science in Secondary Education Major in Technology Livelihood Education"] +=7.1;
+    courseRecommendations["BSEd (BioSci) - Bachelor of Science in Secondary Education Major in Biological Sciences"] +=7.1;
+    courseRecommendations["BSEd (English) - Bachelor of Science in Secondary Education Major in English"] +=7.1;
+    courseRecommendations["BSEd (Filipino) - Bachelor of Science in Secondary Education Major in Filipino"] +=7.1;
+    courseRecommendations["BSEd (Math) - Bachelor of Science in Secondary Education Major in Mathematics"] +=7.1;
+    courseRecommendations["BSEd (IS) - Bachelor of Science in Secondary Education Major in Islamic Studies"] +=7.1;
+    courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=7.1;
+    courseRecommendations["BSEd (Physical Sci) - Bachelor of Science in Secondary Education Major in Physical Sciences"] +=7.1;
+    courseRecommendations["BSEd (Social Studies) - Bachelor of Science in Secondary Education Major in Social Studies"] +=7.1;
+    courseRecommendations["BSEd (Values Ed) - Bachelor of Science in Secondary Education Major in Values Education"] +=7.1;
+} else if (careerAspiration === "technology") {
+    courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=7.1;
+    courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=7.1;
+    courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=7.1;
+    courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=7.1;
+    courseRecommendations["BSSE - Bachelor of Science in Software Engineering"] +=7.1;
+    courseRecommendations["BSDataSci - Bachelor of Science in Data Science"] +=7.1;
+} else if (careerAspiration === "business") {
+    courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=7.1;
+    courseRecommendations["BSBA (BusEcon) - Bachelor of Science in Business Administration Major in Business Economics"] +=7.1;
+    courseRecommendations["BSBA (FinMan) - Bachelor of Science in Business Administration Major in Financial Management"] +=7.1;
+    courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=7.1;
+    courseRecommendations["BSBA (Mktg) - Bachelor of Science in Business Administration Major in Marketing Management"] +=7.1;
+    courseRecommendations["BSBA (Ops) - Bachelor of Science in Business Administration Major in Operation Management"] +=7.1;
+    courseRecommendations["BSBA (HRM) - Bachelor of Science in Business Administration Major in Hotel and Restaurant Management"] +=7.1;
+    courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=7.1;
+} else if (careerAspiration === "arts") {
+    courseRecommendations["BAH - Bachelor of Arts in History"] +=7.1;
+    courseRecommendations["BAP - Bachelor of Arts in Philosophy"] +=7.1;
+    courseRecommendations["BFA (ID) - Bachelor of Fine Arts Major in Industrial Design"] +=7.1;
+    courseRecommendations["BFA (Painting) - Bachelor of Fine Arts Major in Painting"] +=7.1;
+    courseRecommendations["BFA (Sculpture) - Bachelor of Fine Arts Major in Sculpture"] +=7.1;
+    courseRecommendations["BFA (Visual Comm) - Bachelor of Fine Arts Major in Visual Communication"] +=7.1;
+} else if (careerAspiration === "medicine") {
+    courseRecommendations["BSMT - Bachelor of Science in Medical Technology"] +=7.1;
+    courseRecommendations["BSMid - Bachelor of Science in Midwifery"] +=7.1;
+    courseRecommendations["BSN - Bachelor of Science in Nursing"] +=7.1;
+    courseRecommendations["BSOT - Bachelor of Science in Occupational Therapy"] +=7.1;
+    courseRecommendations["BSP - Bachelor of Science in Pharmacy"] +=7.1;
+    courseRecommendations["BSPT - Bachelor of Science in Physical Therapy"] +=7.1;
+    courseRecommendations["BSRadTech - Bachelor of Science in Radiologic Technology"] +=7.1;
+    courseRecommendations["BSRT - Bachelor of Science in Respiratory Therapy"] +=7.1;
+    courseRecommendations["BSSLP - Bachelor of Science in Speech Language Pathology"] +=7.1;
+}
+
+    if (academicTerm === "2years" || academicTerm === "3years" || academicTerm === "4years" || academicTerm === "5years") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+   if (learningStylePreference === "visual" || learningStylePreference === "auditory" || learningStylePreference === "reading-writing" || learningStylePreference === "kinesthetic") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (skillsHobies === "technical-skills") {
+        courseRecommendations["BSCS - Bachelor of Science in Computer Science"] +=7.9;
+        courseRecommendations["BSIT - Bachelor of Science in Information Technology"] +=7.9;
+        courseRecommendations["BSSE - Bachelor of Science in Software Engineering"] +=7.9;
+        courseRecommendations["BSIS - Bachelor of Science in Information Systems"] +=7.9;
+        courseRecommendations["BSAeroE - Bachelor of Science in Aeronautical Engineering"] +=7.9;
+        courseRecommendations["BSCerE - Bachelor of Science in Ceramic Engineering"] +=7.9;
+        courseRecommendations["BSChE - Bachelor of Science in Chemical Engineering"] +=7.9;
+        courseRecommendations["BSCE - Bachelor of Science in Civil Engineering"] +=7.9;
+        courseRecommendations["BSCoE - Bachelor of Science in Computer Engineering"] +=7.9;
+        courseRecommendations["BSECE - Bachelor of Science in Electrical Engineering"] +=7.9;
+        courseRecommendations["BSECE - Bachelor of Science in Electronics and Communication Engineering"] +=7.9;
+        courseRecommendations["BSGE - Bachelor of Science in Geodetic Engineering"] +=7.9;
+        courseRecommendations["BSGeoE - Bachelor of Science in Geological Engineering"] +=7.9;
+        courseRecommendations["BSIE - Bachelor of Science in Industrial Engineering"] +=7.9;
+        courseRecommendations["BSMarE - Bachelor of Science in Marine Engineering"] +=7.9;
+        courseRecommendations["BSMatE - Bachelor of Science in Materials Engineering"] +=7.9;
+        courseRecommendations["BSME - Bachelor of Science in Mechanical Engineering"] +=7.9;
+        courseRecommendations["BSMetE - Bachelor of Science in Metallurgical Engineering"] +=7.9;
+        courseRecommendations["BSMinE - Bachelor of Science in Mining Engineering"] +=7.9;
+        courseRecommendations["BSPetE - Bachelor of Science in Petroleum Engineering"] +=7.9;
+        courseRecommendations["BSSanE - Bachelor of Science in Sanitary Engineering"] +=7.9;
+    } else if (skillsHobies === "creative-skills") {
+        courseRecommendations["BFA (Painting) - Bachelor of Fine Arts Major in Painting"] +=7.9;
+        courseRecommendations["BALit - Bachelor of Arts in Literature"] +=7.9;
+        courseRecommendations["BAEng - Bachelor of Arts in English"] +=7.9;
+        courseRecommendations["BAJourn - Bachelor of Arts in Journalism"] +=7.9;
+        courseRecommendations["BABroadcast - Bachelor of Arts in Broadcasting"] +=7.9;
+        courseRecommendations["BAComm - Bachelor of Arts in Communication"] +=7.9;
+        courseRecommendations["BADevComm - Bachelor of Arts in Development Communication"] +=7.9;
+        courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=7.9;
+        courseRecommendations["BLIS - Bachelor of Library and Information Science"] +=7.9;
+        courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=7.9;
+        courseRecommendations["BPE - Bachelor of Physical Education"] +=7.9;
+    } else if (skillsHobies === "sports") {
+        courseRecommendations["BSSS - Bachelor of Science in Sports Science"] +=7.9;
+        courseRecommendations["BPE - Bachelor of Physical Education"] +=7.9;
+        courseRecommendations["BSCD - Bachelor of Science in Community Development"] +=7.9;
+        courseRecommendations["BSMT - Bachelor of Science in Marine Transportation"] +=7.9;
+        courseRecommendations["BSCustoms - Bachelor of Science in Customs Administration"] +=7.9;
+        courseRecommendations["BSFS - Bachelor of Science in Foreign Service"] +=7.9;
+        courseRecommendations["BSPublicSafety - Bachelor of Science in Public Safety"] +=7.9;
+        courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=7.9;
+        courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=7.9;
+       
+    } else if (skillsHobies === "musical-talents") {
+        courseRecommendations["BAJourn - Bachelor of Arts in Journalism"] +=7.9;
+        courseRecommendations["BAComm - Bachelor of Arts in Communication"] +=7.9;
+        courseRecommendations["BAJourn - Bachelor of Arts in Journalism"] +=7.9;
+        courseRecommendations["BAEng - Bachelor of Arts in English"] +=7.9;
+        courseRecommendations["BSEd (MAPEH) - Bachelor of Science in Secondary Education Major in Music, Arts, Physical and Health Education"] +=7.9;
+        courseRecommendations["BSSLP - Bachelor of Science in Speech Language Pathology"] +=7.9;
+        courseRecommendations["BPA - Bachelor of Public Administration"] +=7.9;
+    } else if (skillsHobies === "communication-skills") {
+        courseRecommendations["BAComm - Bachelor of Arts in Communication"] +=7.9;
+        courseRecommendations["BAJourn - Bachelor of Arts in Journalism"] +=7.9;
+        courseRecommendations["BADevComm - Bachelor of Arts in Development Communication"] +=7.9;
+        courseRecommendations["BAMassComm - Bachelor of Arts in Mass Communication"] +=7.9;
+        courseRecommendations["BAEng - Bachelor of Arts in English"] +=7.9;
+        courseRecommendations["BSPublicSafety - Bachelor of Science in Public Safety"] +=7.9;
+        courseRecommendations["BSCD - Bachelor of Science in Community Development"] +=7.9;
+        courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=7.9;
+        courseRecommendations["BPA - Bachelor of Public Administration"] +=7.9;
+    } else if (skillsHobies === "leadership-abilities") {
+        courseRecommendations["BPA - Bachelor of Public Administration"] +=7.9;
+        courseRecommendations["BSBA - Bachelor of Science in Business Administration"] +=7.9;
+        courseRecommendations["BSBA (HRD) - Bachelor of Science in Business Administration Major in Human Resource Development"] +=7.9;
+        courseRecommendations["BSEntrep - Bachelor of Science in Entrepreneurship"] +=7.9;
+        courseRecommendations["BSHRM - Bachelor of Science in Human Resource Management"] +=7.9;
+        courseRecommendations["BSPublicSafety - Bachelor of Science in Public Safety"] +=7.9;
+        courseRecommendations["BSSW - Bachelor of Science in Social Work"] +=7.9;
+        courseRecommendations["BSMT - Bachelor of Science in Marine Transportation"] +=7.9;
+        courseRecommendations["BSPolSci - Bachelor of Science in Political Science"] +=7.9;
+        courseRecommendations["BSCrim - Bachelor of Science in Criminology"] +=7.9;
+
+    }
+    if (financialAidOrScholarship === "full" || financialAidOrScholarship === "partial" || financialAidOrScholarship === "need" || financialAidOrScholarship === "merit") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+    if (industryRelevance === "high" || industryRelevance === "stable" || industryRelevance === "niche") {
+        for (var course in courseRecommendations) {
+            courseRecommendations[course] +=3.8;
+        }
+    }
+
+var locationDisplay = document.getElementById("location-display");
+    locationDisplay.textContent = "Selected Location: " + location + " " + universities;
+
+const sortedCourses = Object.entries(courseRecommendations).sort((a, b) => b[1] - a[1]);
+
+const top7Courses = sortedCourses.slice(0, 7);
+
+var courseList = document.getElementById("course-list");
+courseList.innerHTML = "";
+
+for (var i = 0; i < top7Courses.length; i++) {
+    var course = top7Courses[i];
+    var courseName = course[0];
+    var progressValue = course[1];
+
+    var progressBarContainer = document.createElement("div");
+    progressBarContainer.className = "progress-container";
+    var progressBar = document.createElement("div");
+    progressBar.className = "progress-bar";
+    progressBar.style.width = progressValue + "%";
+
+    var percentageElement = document.createElement("div");
+    percentageElement.className = "percentage-label";
+    percentageElement.textContent = progressValue.toFixed(2) + "%";
+
+    progressBarContainer.appendChild(progressBar);
+    progressBarContainer.appendChild(percentageElement);
+
+    var courseElement = document.createElement("div");
+    courseElement.className = "course-label";
+    courseElement.textContent = courseName + ":";
+
+    courseList.appendChild(courseElement);
+    courseList.appendChild(progressBarContainer);
+}
+
+    var modal = document.getElementById("course-modal");
+    modal.style.display = "block";
+    }
+
+    function closeModal() {
+    var modal = document.getElementById("course-modal");
+    modal.style.display = "none";
+
+    // Reset the dropdowns
+    var dropdowns = document.querySelectorAll('select');
+    dropdowns.forEach(function (dropdown) {
+        dropdown.value = 'none';
+
+        // Hide the associated input fields
+        var associatedInput = document.getElementById(dropdown.dataset.associatedInput);
+        if (associatedInput) {
+            associatedInput.style.display = "none";
+        }
+    });
+}
+
+
+
+    </script>
+    <button type="submit" class="submit-button" onclick="displaySelectedValues()"> Submit</button>
+</body>
+</html>
